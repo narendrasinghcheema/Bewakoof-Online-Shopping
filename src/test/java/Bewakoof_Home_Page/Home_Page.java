@@ -22,7 +22,7 @@ public class Home_Page {
 	}
 
 	public void select_Men_header() throws IOException {
-		
+
 		ArrayList<String> details = Funtions.readMen_Headerfrom_Sheet();
 
 		ArrayList<String> verification = Funtions.verification_Page();
@@ -32,21 +32,16 @@ public class Home_Page {
 			action.moveToElement(Header_Men).build().perform();
 			String x_path = String.format("(//span[text()='%s'])[1]", details.get(i));
 
-			
-			
 			WebElement click_perform = driver.findElement(By.xpath(x_path));
 			action.moveToElement(click_perform).click().build().perform();
-			
+
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 
-			
 			String s = verification.get(i);
 			System.out.println("Xpath = " + s);
-		
 
-			String verification_massage = String
-					.format("//h1[contains(@class, 'searchResults') and contains(text(), \"%s\")]", s);
-			
+			String verification_massage = String.format("//h1[contains(@class, 'searchResults') and contains(text(), \"%s\")]", s);
+
 			System.out.println("verification_massage = " + verification_massage);
 			WebElement verificationElement = driver.findElement(By.xpath(verification_massage));
 
