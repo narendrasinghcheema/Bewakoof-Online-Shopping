@@ -45,11 +45,17 @@ public class Home_Page {
 			System.out.println("verification_massage = " + verification_massage);
 			WebElement verificationElement = driver.findElement(By.xpath(verification_massage));
 
-			if (verificationElement.isDisplayed()) {
-				System.out.println("Page is now correct.");
-			} else {
-				System.out.println("Page is not correct");
+			try {
+			    if (verificationElement.isDisplayed()) {
+			        System.out.println("Page is now correct.");
+			    } else {
+			        throw new AssertionError("Page is not correct");
+			    }
+			} catch (Exception e) {
+			    System.out.println("Caught an exception: " + e.getMessage());
+			   
 			}
+
 
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 
