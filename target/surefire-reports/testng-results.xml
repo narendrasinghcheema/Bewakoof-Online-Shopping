@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-11T10:25:31 IST" name="Suite" finished-at="2024-01-11T10:26:52 IST" duration-ms="81408">
+  <suite started-at="2024-01-11T15:44:33 IST" name="Suite" finished-at="2024-01-11T15:45:53 IST" duration-ms="79355">
     <groups>
     </groups>
-    <test started-at="2024-01-11T10:25:31 IST" name="Test" finished-at="2024-01-11T10:26:52 IST" duration-ms="81408">
+    <test started-at="2024-01-11T15:44:33 IST" name="Test" finished-at="2024-01-11T15:45:53 IST" duration-ms="79355">
       <class name="Runner.Run_test_Script">
-        <test-method is-config="true" signature="Start_browser()[pri:0, instance:Runner.Run_test_Script@18ce0030]" started-at="2024-01-11T10:25:31 IST" name="Start_browser" finished-at="2024-01-11T10:25:57 IST" duration-ms="26077" status="PASS">
+        <test-method is-config="true" signature="Start_browser()[pri:0, instance:Runner.Run_test_Script@18ce0030]" started-at="2024-01-11T15:44:33 IST" name="Start_browser" finished-at="2024-01-11T15:44:50 IST" duration-ms="16856" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Start_browser -->
-        <test-method signature="Home_Screen()[pri:0, instance:Runner.Run_test_Script@18ce0030]" started-at="2024-01-11T10:25:57 IST" name="Home_Screen" finished-at="2024-01-11T10:26:52 IST" duration-ms="55204" status="PASS">
+        <test-method signature="Home_Screen()[pri:0, instance:Runner.Run_test_Script@18ce0030]" started-at="2024-01-11T15:44:51 IST" name="Home_Screen" finished-at="2024-01-11T15:45:53 IST" duration-ms="62006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home_Screen -->
