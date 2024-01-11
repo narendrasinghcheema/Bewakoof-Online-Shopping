@@ -44,7 +44,7 @@ public class Home_page_Woman {
 
 			try {
 				if (verification_element.isDisplayed()) {
-					System.out.println("Page is now correct.");
+					System.out.println("Woman Page is now correct.");
 				} else {
 					throw new AssertionError("Woman Page is not correct");
 				}
