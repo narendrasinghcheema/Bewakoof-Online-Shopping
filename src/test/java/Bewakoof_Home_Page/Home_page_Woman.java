@@ -46,7 +46,7 @@ public class Home_page_Woman {
 				if (verification_element.isDisplayed()) {
 					System.out.println("Page is now correct.");
 				} else {
-					throw new AssertionError("Page is not correct");
+					throw new AssertionError("Woman Page is not correct");
 				}
 			} catch (Exception e) {
 				System.out.println("Caught an exception: " + e.getMessage());
