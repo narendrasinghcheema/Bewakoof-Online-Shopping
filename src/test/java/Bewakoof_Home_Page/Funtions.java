@@ -50,5 +50,4 @@ public class Funtions {
 
 		return co2;
 	}
-
 }
