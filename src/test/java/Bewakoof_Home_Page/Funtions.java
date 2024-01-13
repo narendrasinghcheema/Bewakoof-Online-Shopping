@@ -83,4 +83,35 @@ public class Funtions {
 		return ar1;
 	}
 
+	public static ArrayList<String> Read_Mobile_Cover_Header_Data() throws IOException {
+		FileInputStream file = new FileInputStream(
+				"C:\\Users\\hp\\Downloads\\Bewakoof_Automation Data (Home_Page_Mobile_Cover).xlsx");
+		XSSFWorkbook workBook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workBook.getSheetAt(0);
+
+		ArrayList<String> ar = new ArrayList<String>();
+		int number = sheet.getLastRowNum();
+		for (int i = 1; i <= number; i++) {
+			String a = sheet.getRow(i).getCell(0).getStringCellValue();
+			ar.add(a);
+		}
+		return ar;
+
+	}
+
+	public static ArrayList<String> Mobile_cover_verification_Page() throws IOException {
+		FileInputStream file = new FileInputStream(
+				"C:\\Users\\hp\\Downloads\\Bewakoof_Automation Data (Home_Page_Mobile_Cover).xlsx");
+		XSSFWorkbook workBook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workBook.getSheetAt(1);
+
+		ArrayList<String> ar1 = new ArrayList<String>();
+		int number = sheet.getLastRowNum();
+		for (int i = 1; i <= number; i++) {
+			String a = sheet.getRow(i).getCell(0).getStringCellValue();
+			ar1.add(a);
+		}
+		return ar1;
+	}
+
 }

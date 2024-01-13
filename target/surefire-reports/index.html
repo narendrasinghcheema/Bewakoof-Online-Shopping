@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Runner.Run_test_Script" class="method navigator-link" hash-for-method="Home_Screen">Home_Screen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.Run_test_Script" class="method navigator-link" hash-for-method="Home_Screen_Mobile_cover">Home_Screen_Mobile_cover</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Runner.Run_test_Script" class="method navigator-link" hash-for-method="Home_Screen_woman">Home_Screen_woman</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,6 +140,20 @@
                   <a name="Home_Screen">
                   </a> <!-- Home_Screen -->
                   <span class="method-name">Home_Screen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Home_Screen_Mobile_cover">
+                  </a> <!-- Home_Screen_Mobile_cover -->
+                  <span class="method-name">Home_Screen_Mobile_cover</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Home_Screen_woman">
+                  </a> <!-- Home_Screen_woman -->
+                  <span class="method-name">Home_Screen_woman</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -186,11 +210,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Home_Screen')
 data.setCell(0, 2, 'Runner.Run_test_Script')
-data.setCell(0, 3, 76452);
+data.setCell(0, 3, 40080);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Home_Screen_Mobile_cover')
+data.setCell(1, 2, 'Runner.Run_test_Script')
+data.setCell(1, 3, 26982);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Home_Screen_woman')
+data.setCell(2, 2, 'Runner.Run_test_Script')
+data.setCell(2, 3, 21454);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -228,7 +260,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Home_Screen</span>
-                <span class="method-start">25241 ms</span>
+                <span class="method-start">10313 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Home_Screen_woman</span>
+                <span class="method-start">50435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Home_Screen_Mobile_cover</span>
+                <span class="method-start">71891 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
