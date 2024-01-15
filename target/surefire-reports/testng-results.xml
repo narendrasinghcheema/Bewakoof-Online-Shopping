@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-13T10:48:22 IST" name="Suite" finished-at="2024-01-13T10:50:01 IST" duration-ms="99115">
+  <suite started-at="2024-01-13T10:55:44 IST" name="Suite" finished-at="2024-01-13T10:58:58 IST" duration-ms="194304">
     <groups>
     </groups>
-    <test started-at="2024-01-13T10:48:22 IST" name="Test" finished-at="2024-01-13T10:50:01 IST" duration-ms="99115">
+    <test started-at="2024-01-13T10:55:44 IST" name="Test" finished-at="2024-01-13T10:58:58 IST" duration-ms="194304">
       <class name="Runner.Run_test_Script">
-        <test-method is-config="true" signature="Start_browser()[pri:0, instance:Runner.Run_test_Script@4df50bcc]" started-at="2024-01-13T10:48:22 IST" name="Start_browser" finished-at="2024-01-13T10:48:32 IST" duration-ms="10228" status="PASS">
+        <test-method is-config="true" signature="Start_browser()[pri:0, instance:Runner.Run_test_Script@4df50bcc]" started-at="2024-01-13T10:55:44 IST" name="Start_browser" finished-at="2024-01-13T10:56:10 IST" duration-ms="25509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Start_browser -->
-        <test-method signature="Home_Screen()[pri:0, instance:Runner.Run_test_Script@4df50bcc]" started-at="2024-01-13T10:48:32 IST" name="Home_Screen" finished-at="2024-01-13T10:49:12 IST" duration-ms="40080" status="PASS">
+        <test-method signature="Home_Screen()[pri:0, instance:Runner.Run_test_Script@4df50bcc]" started-at="2024-01-13T10:56:10 IST" name="Home_Screen" finished-at="2024-01-13T10:57:30 IST" duration-ms="80228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home_Screen -->
-        <test-method signature="Home_Screen_woman()[pri:0, instance:Runner.Run_test_Script@4df50bcc]" started-at="2024-01-13T10:49:12 IST" name="Home_Screen_woman" finished-at="2024-01-13T10:49:34 IST" depends-on-methods="Runner.Run_test_Script.Home_Screen" duration-ms="21454" status="PASS">
+        <test-method signature="Home_Screen_woman()[pri:0, instance:Runner.Run_test_Script@4df50bcc]" started-at="2024-01-13T10:57:30 IST" name="Home_Screen_woman" finished-at="2024-01-13T10:58:15 IST" depends-on-methods="Runner.Run_test_Script.Home_Screen" duration-ms="45275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home_Screen_woman -->
-        <test-method signature="Home_Screen_Mobile_cover()[pri:0, instance:Runner.Run_test_Script@4df50bcc]" started-at="2024-01-13T10:49:34 IST" name="Home_Screen_Mobile_cover" finished-at="2024-01-13T10:50:01 IST" depends-on-methods="Runner.Run_test_Script.Home_Screen_woman" duration-ms="26982" status="PASS">
+        <test-method signature="Home_Screen_Mobile_cover()[pri:0, instance:Runner.Run_test_Script@4df50bcc]" started-at="2024-01-13T10:58:15 IST" name="Home_Screen_Mobile_cover" finished-at="2024-01-13T10:58:58 IST" depends-on-methods="Runner.Run_test_Script.Home_Screen_woman" duration-ms="42657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home_Screen_Mobile_cover -->

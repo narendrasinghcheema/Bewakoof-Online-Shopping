@@ -45,7 +45,7 @@ public class Home_page_Mobile_Covers {
 
 			try {
 				if (verification_code_for_page.isDisplayed()) {
-					System.out.println("Mobile cover Page is not correct");
+					System.out.println("Mobile cover Page is correct");
 				} else {
 					throw new AssertionError("Mobile cover Page is not correct");
 				}
