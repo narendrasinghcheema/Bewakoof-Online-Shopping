@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import Bewakoof_Header_Next_Page.Winterwear_Page;
 import Bewakoof_Home_Page.Home_Page;
 import Bewakoof_Home_Page.Home_page_Mobile_Covers;
 import Bewakoof_Home_Page.Home_page_Woman;
@@ -19,13 +20,14 @@ public class Run_test_Script {
 	Home_Page obj1;
 	Home_page_Woman obj2;
 	Home_page_Mobile_Covers obj3;
+	Winterwear_Page obj4;
 
 	@BeforeTest
 	public void Start_browser() {
 		driver = Select_Browser.select("firefox", "https://www.bewakoof.com");
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void Home_Screen() throws IOException {
 		obj1 = PageFactory.initElements(driver, Home_Page.class);
 
@@ -45,5 +47,12 @@ public class Run_test_Script {
 		obj3 = PageFactory.initElements(driver, Home_page_Mobile_Covers.class);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		obj3.select_mobile_Cover_header();
+	}
+	
+	@Test(priority = 2)
+	public void Next_Page_Header_details() throws IOException
+	{
+		obj4 = PageFactory.initElements(driver, Winterwear_Page.class);
+		obj4.clicking_on_header();
 	}
 }
