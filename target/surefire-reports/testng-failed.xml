@@ -6,6 +6,9 @@
       <class name="Runner.Run_test_Script">
         <methods>
           <include name="Next_Page_Header_details"/>
+          <include name="Home_Screen_Mobile_cover"/>
+          <include name="Home_Screen"/>
+          <include name="Home_Screen_woman"/>
           <include name="Start_browser"/>
         </methods>
       </class> <!-- Runner.Run_test_Script -->

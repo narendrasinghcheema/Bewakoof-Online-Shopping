@@ -44,6 +44,8 @@ public class Winterwear_Page {
 
 		for (int i = 0; i < re.size(); i++) {
 
+			driver.navigate().refresh();
+			
 			String data = String.format("//a[text()='%s']", re.get(i));
 
 			WebElement header_Data = driver.findElement(By.xpath(data));
@@ -61,10 +63,14 @@ public class Winterwear_Page {
 
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-			if (verification_url.contains(
-					"/winter-wear-collection?category=sweatshirt_hoodies_jacket_sweater&sizes=XS_S_M_L_XL_2XL_3XL&sort=new")) {
+			if (verification_url.contains("/winter-wear-collection?category=sweatshirt_hoodies_jacket_sweater&sizes=XS_S_M_L_XL_2XL_3XL&sort=new")) 
+			{
+				driver.navigate().refresh();
 				Actions action = new Actions(driver);
 				action.moveToElement(filer).build().perform();
+				
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+				
 				action.moveToElement(filter_Values).click().build().perform();
 
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
