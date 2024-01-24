@@ -48,10 +48,9 @@ public class Run_test_Script {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		obj3.select_mobile_Cover_header();
 	}
-	
+
 	@Test(priority = 2)
-	public void Next_Page_Header_details() throws IOException
-	{
+	public void Next_Page_Header_details() throws Exception {
 		obj4 = PageFactory.initElements(driver, Winterwear_Page.class);
 		obj4.clicking_on_header();
 	}
