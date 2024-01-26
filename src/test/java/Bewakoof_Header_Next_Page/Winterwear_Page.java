@@ -82,7 +82,11 @@ public class Winterwear_Page {
 
 				for (WebElement ele1 : locate) {
 					String text = ele1.getText();
-					String getting_prize = text.replace("₹", "");
+					String getting_prize = text.replaceAll("[^\\d]", "");
+
+					
+					System.out.println("numbers = "+getting_prize);
+					Thread.sleep(2000);
 					int prize_number_in_int_format = Integer.parseInt(getting_prize);
 					store_numbers.add(prize_number_in_int_format);
 				}
