@@ -66,10 +66,11 @@ public class Winterwear_Page {
 			if (verification_url.contains("/winter-wear-collection?category=sweatshirt_hoodies_jacket_sweater&sizes=XS_S_M_L_XL_2XL_3XL&sort=new")) 
 			{
 				driver.navigate().refresh();
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 				Actions action = new Actions(driver);
 				action.moveToElement(filer).build().perform();
 				
-				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 				
 				action.moveToElement(filter_Values).click().build().perform();
 
